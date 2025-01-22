@@ -1,0 +1,49 @@
+
+
+FONTE   TARGET                          TIPO DI SCAN                   RISULTATI
+
+
+Nmap	192.168.50.101                 	-p 1-1024             21/tcp  open  ftp 22/tcp  open  ssh 23/tcp  open  telnet 25/tcp  open  smtp 53/tcp  open  domain 80/tcp  open  http 111/tcp open 
+                                                              rpcbind 139/tcp open  netbios-ssn 445/tcp open  microsoft-ds 512/tcp open  exec 513/tcp open  login 514/tcp open  shell
+
+
+
+
+Nmap	192.168.50.101 	            -sS -p 1-1024	21/tcp  open  ftp 22/tcp  open  ssh 23/tcp  open  telnet 25/tcp  open  smtp 53/tcp  open  domain 80/tcp  open  http 111/tcp            open                                                     rpcbind 139/tcp open  netbios-ssn 445/tcp open  microsoft-ds 512/tcp open  exec 513/tcp open  login 514/tcp open  shell
+
+
+
+
+
+
+
+Nmap	192.168.50.101               -A -p 1-1024	21/tcp - FTP: vsftpd 2.3.4 21/tcp - FTP: vsftpd 2.3.4
+
+                                                       
+21/tcp - FTP: vsftpd 2.3.4
+
+Accesso anonimo FTP consentito.
+22/tcp - SSH: OpenSSH 4.7p1 Debian 8ubuntu1 (protocollo 2.0)
+
+23/tcp - Telnet: Linux telnetd
+
+25/tcp - SMTP: Postfix smtpd
+
+Comandi SMTP supportati: PIPELINING, VRFY, STARTTLS, ETRN, ecc.
+53/tcp - DNS: ISC BIND 9.4.2
+
+80/tcp - HTTP: Apache HTTPD 2.2.8 (Ubuntu) DAV/2
+
+Titolo della pagina web: "Metasploitable2 - Linux"
+111/tcp - rpcbind: Versione 2 (RPC #100000)
+
+NFS e altri servizi RPC disponibili.
+139/tcp - NetBIOS-SSN: Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+445/tcp - NetBIOS-SSN: Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+
+512/tcp - Exec: netkit-rsh rexecd
+
+513/tcp - Login: (Possibile servizio di login remoto)
+
+514/tcp - Shell: Netkit rsh
